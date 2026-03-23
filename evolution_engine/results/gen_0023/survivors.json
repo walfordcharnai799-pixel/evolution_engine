@@ -1,0 +1,7766 @@
+[
+  {
+    "genome_id": "fd570061-8721-4f1e-9b9b-6baad111dcb3",
+    "species": "tesla",
+    "generation": 11,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "083e8293-a19c-4f42-977c-24d01d211113"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "54321cbc-20f2-4ab4-8251-8b1efdac5647",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "2b3574f1-06b4-4c1f-9057-e1d03568398b",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 7
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "aaf3e064-399c-4a4e-a3cd-7838f72c0016",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 9,
+          "slow": 25,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "5d37a5b9-e5c5-481f-9716-208e35add6b8",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0199,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0072
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "677ee3a5-1e3b-4cac-acab-12465c884248",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "5558202f-1db3-4472-9105-3555a5804fdc",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0233,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "4298b6e1-b30e-4cb5-9fd0-423d25ffe3da",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "3d959406-4c6c-420a-a9c5-e762e3197096",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "8ecb5db8-5151-495a-99a0-c179d928f401",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "743046f2-e8ee-46ff-a41e-39558ffd7618",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0199,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0062
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "7eb36701-eabe-483e-9d4e-f9efc83abed6",
+    "species": "tesla",
+    "generation": 12,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0141,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0053
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "a14219a7-7b44-4188-aadc-5003c498c1dc",
+    "species": "tesla",
+    "generation": 13,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "54321cbc-20f2-4ab4-8251-8b1efdac5647"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "a021c915-58b3-4eb1-943d-a7084b39ad22",
+    "species": "tesla",
+    "generation": 13,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "8ecb5db8-5151-495a-99a0-c179d928f401"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "e3f0bd0e-04bb-4706-be74-00990d70371d",
+    "species": "tesla",
+    "generation": 13,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "3409cbe4-438c-4ab1-a62b-bd8ba589c951",
+    "species": "tesla",
+    "generation": 13,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 9,
+          "slow": 25,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "aaf3e064-399c-4a4e-a3cd-7838f72c0016"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "f0e1b1ea-82a9-4b60-b035-85c23bcc3080",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0264,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "743046f2-e8ee-46ff-a41e-39558ffd7618"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "3a8b4a32-4510-4c11-8159-9d3b80715b35",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "4298b6e1-b30e-4cb5-9fd0-423d25ffe3da"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "58ebdfbc-a4a6-4e82-b244-8c5a001c1c57",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0167,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "236ba10e-9592-4cb3-908b-c10005b0d150",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 7
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.022,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0107
+    },
+    "parent_ids": [
+      "2b3574f1-06b4-4c1f-9057-e1d03568398b"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "94f85816-23d6-4fa7-b8a5-ee5f2a834782",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0199,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0062
+    },
+    "parent_ids": [
+      "743046f2-e8ee-46ff-a41e-39558ffd7618"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "d5651aae-d633-4cdb-9a5a-f2170a976ba0",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 9,
+          "slow": 25,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3409cbe4-438c-4ab1-a62b-bd8ba589c951"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "4cdb833f-019c-471e-837f-152ac34923a1",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3d959406-4c6c-420a-a9c5-e762e3197096"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "477f7366-d1c7-4225-88ac-361b70f5371a",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0257,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0058
+    },
+    "parent_ids": [
+      "8ecb5db8-5151-495a-99a0-c179d928f401"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "d9d0491d-e24f-4a3b-a149-fc91624902a7",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0213,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "743046f2-e8ee-46ff-a41e-39558ffd7618"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "733d610c-76eb-4044-8fa1-ee860dcccb09",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 13
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0199,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0072
+    },
+    "parent_ids": [
+      "5d37a5b9-e5c5-481f-9716-208e35add6b8"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "675fc0f4-f4a5-4605-829a-3e7434ce4b53",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0118,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "7eb36701-eabe-483e-9d4e-f9efc83abed6"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "4d65f597-024f-4667-b843-3a648ebeb0ea",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3d959406-4c6c-420a-a9c5-e762e3197096"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "750047e2-0c9b-471e-b05e-595c71bc42de",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "e3f0bd0e-04bb-4706-be74-00990d70371d"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "b2f2e172-3b2b-4d70-8aab-736b832ffada",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3d959406-4c6c-420a-a9c5-e762e3197096"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "589443ac-b53f-4e5f-a95e-8e60b4df5646",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 13
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0219,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0137
+    },
+    "parent_ids": [
+      "677ee3a5-1e3b-4cac-acab-12465c884248"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "a3cf60c0-bc05-4b68-8190-8b3b26213b0e",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "a14219a7-7b44-4188-aadc-5003c498c1dc"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "51f020b9-585a-43c6-8098-952be5e3002b",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "a021c915-58b3-4eb1-943d-a7084b39ad22"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "81c2cd78-a5e2-4947-a9e3-bfb36198ce34",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "8ecb5db8-5151-495a-99a0-c179d928f401"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "7933e05e-5a72-4976-944a-94dc3b3571a7",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 9,
+          "slow": 25,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "aaf3e064-399c-4a4e-a3cd-7838f72c0016"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "59ac261b-8838-4f6d-bb69-05ebaf374bfd",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "8ecb5db8-5151-495a-99a0-c179d928f401"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "87631beb-550e-4756-9fa1-fd1f16dfd906",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 9,
+          "slow": 25,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3409cbe4-438c-4ab1-a62b-bd8ba589c951"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "4d37c0db-db54-438c-98af-41c8e36fd094",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 9,
+          "slow": 25,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "aaf3e064-399c-4a4e-a3cd-7838f72c0016"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "d286a82e-65a3-4469-a623-3a7f65dc7085",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0256,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "54321cbc-20f2-4ab4-8251-8b1efdac5647"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "cd85389b-125b-4c2e-b1d9-87c7ef018531",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 13
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0199,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0062
+    },
+    "parent_ids": [
+      "743046f2-e8ee-46ff-a41e-39558ffd7618"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "73cf526d-d1d7-4dd7-849a-045d12c5c80e",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0154,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0059
+    },
+    "parent_ids": [
+      "4298b6e1-b30e-4cb5-9fd0-423d25ffe3da"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "fddc2178-e842-4fe1-a873-8e48773c0129",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3d959406-4c6c-420a-a9c5-e762e3197096"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "0aa914d4-7276-4d08-98a9-132f34a70f90",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 7
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "2b3574f1-06b4-4c1f-9057-e1d03568398b"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "253e7996-efba-4627-8413-c02af260f3a1",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0201,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0106
+    },
+    "parent_ids": [
+      "3d959406-4c6c-420a-a9c5-e762e3197096"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "b33b1b93-d681-42d3-967d-c8789e291c47",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0199,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0072
+    },
+    "parent_ids": [
+      "5d37a5b9-e5c5-481f-9716-208e35add6b8"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "b8596fa8-6b66-4f0b-838c-7b65c0e61ae9",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "fd570061-8721-4f1e-9b9b-6baad111dcb3"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "12c643e5-ab3e-4866-8097-8b1d3a199252",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0141,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0053
+    },
+    "parent_ids": [
+      "7eb36701-eabe-483e-9d4e-f9efc83abed6"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "3afe73b4-a918-4153-b0dc-96454914f58d",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0215,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0092
+    },
+    "parent_ids": [
+      "4298b6e1-b30e-4cb5-9fd0-423d25ffe3da"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "558d66ff-a5f0-4cd9-880f-6e3fc4414c34",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3d959406-4c6c-420a-a9c5-e762e3197096"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "3e318fc7-64fb-40a7-b3af-5fac60a0f045",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0141,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0053
+    },
+    "parent_ids": [
+      "7eb36701-eabe-483e-9d4e-f9efc83abed6"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "a83758ab-e851-4535-b36c-696719c85a93",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0233,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "5558202f-1db3-4472-9105-3555a5804fdc"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "428ac90b-6a22-47d2-b90f-5c67bb1a5a69",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0245,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "5d37a5b9-e5c5-481f-9716-208e35add6b8"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "1076b4c7-f3c9-4be1-8f98-d6beda2b0fb7",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0233,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "5558202f-1db3-4472-9105-3555a5804fdc"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "7fe39e20-d21c-4743-978d-70cd57cf8dc4",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 9,
+          "slow": 25,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3409cbe4-438c-4ab1-a62b-bd8ba589c951"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "604fd93f-1c9e-4dec-8aae-29405f43e2c7",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0188,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0053
+    },
+    "parent_ids": [
+      "a14219a7-7b44-4188-aadc-5003c498c1dc"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "b009b7d2-3cd6-447a-bfa2-1bafded55ec0",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 9,
+          "slow": 25,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0156,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0051
+    },
+    "parent_ids": [
+      "3409cbe4-438c-4ab1-a62b-bd8ba589c951"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "9f4ec9d1-7ffb-4000-ac9b-77f7359282eb",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "54321cbc-20f2-4ab4-8251-8b1efdac5647"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "dac96f2b-8c20-4288-9184-597f545f7b21",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0141,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0053
+    },
+    "parent_ids": [
+      "7eb36701-eabe-483e-9d4e-f9efc83abed6"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "94c6ee8b-7dcf-4dfc-92ae-6a0b6a2299d6",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 7
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0209,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.008
+    },
+    "parent_ids": [
+      "2b3574f1-06b4-4c1f-9057-e1d03568398b"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "c780056b-e4db-4ee7-bb6e-57e501d462dd",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "4298b6e1-b30e-4cb5-9fd0-423d25ffe3da"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "3fa8bb0e-59e0-4a16-a8f7-d73eaf576961",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 9,
+          "slow": 25,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "aaf3e064-399c-4a4e-a3cd-7838f72c0016"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "2cb520d4-5a5e-4bb3-a057-02ae43f4b3bd",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0233,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "5558202f-1db3-4472-9105-3555a5804fdc"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "f582342c-04b2-45b9-9d63-8c0a5978b5a4",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3d959406-4c6c-420a-a9c5-e762e3197096"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "b63c441c-9277-4cd5-a44b-5ff427e55451",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 7
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "2b3574f1-06b4-4c1f-9057-e1d03568398b"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "c3665181-084d-4bb4-9b8d-e71caf74f81a",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "677ee3a5-1e3b-4cac-acab-12465c884248"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "b6beaea3-3b31-46de-85a3-18225e0e5270",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 8,
+          "slow": 25,
+          "signal": 10
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0183,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0055
+    },
+    "parent_ids": [
+      "3409cbe4-438c-4ab1-a62b-bd8ba589c951"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "af4cfc13-e169-4efd-a072-30413b568b71",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 7
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "2b3574f1-06b4-4c1f-9057-e1d03568398b"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "11a985e6-8875-4d41-8596-4f9045498955",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 9,
+          "slow": 25,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0214,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0073
+    },
+    "parent_ids": [
+      "3409cbe4-438c-4ab1-a62b-bd8ba589c951"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "41bb70a6-d615-4dc3-a243-f3b30e93fe27",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3d959406-4c6c-420a-a9c5-e762e3197096"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "b136e2f6-e6ee-463c-b2af-7ddc022e4de7",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0155,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0077
+    },
+    "parent_ids": [
+      "a14219a7-7b44-4188-aadc-5003c498c1dc"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "b6171fb3-4926-4d6a-8656-a3a6df74ceaf",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.016,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0074
+    },
+    "parent_ids": [
+      "743046f2-e8ee-46ff-a41e-39558ffd7618"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "fd16f7d2-693b-4612-9258-075aed7c08eb",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 7
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "2b3574f1-06b4-4c1f-9057-e1d03568398b"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "1706b843-0db7-4093-a5e3-42e74f0b9431",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "a14219a7-7b44-4188-aadc-5003c498c1dc"
+    ],
+    "fitness_score": 0.764091,
+    "metrics": {
+      "win_rate": 0.6086956521739131,
+      "profit_factor": 5.7979797979798064,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 23,
+      "expectancy": 2.065217391304351,
+      "stability_score": 0.9999999999999998,
+      "sharpe_ratio": 0.813776217361549,
+      "avg_trade_r": 2.065217391304351,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.764091
+    }
+  },
+  {
+    "genome_id": "6749d23e-6b13-496f-a74f-968dd9ad23d7",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H1",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3d959406-4c6c-420a-a9c5-e762e3197096"
+    ],
+    "fitness_score": 0.735122,
+    "metrics": {
+      "win_rate": 0.5833333333333334,
+      "profit_factor": 5.218181818181825,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 24,
+      "expectancy": 1.933333333333336,
+      "stability_score": 0.935376221906903,
+      "sharpe_ratio": 0.7541376426808306,
+      "avg_trade_r": 1.933333333333336,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.735122
+    }
+  },
+  {
+    "genome_id": "0cc10274-33af-47c2-893b-2b5c8d74ba48",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 7
+        },
+        "timeframe": "H1",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "2b3574f1-06b4-4c1f-9057-e1d03568398b"
+    ],
+    "fitness_score": 0.735122,
+    "metrics": {
+      "win_rate": 0.5833333333333334,
+      "profit_factor": 5.218181818181825,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 24,
+      "expectancy": 1.933333333333336,
+      "stability_score": 0.935376221906903,
+      "sharpe_ratio": 0.7541376426808306,
+      "avg_trade_r": 1.933333333333336,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.735122
+    }
+  },
+  {
+    "genome_id": "362fc906-2cd1-4101-91c0-dc6feb139d65",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 8,
+          "slow": 44,
+          "signal": 12
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "aaf3e064-399c-4a4e-a3cd-7838f72c0016"
+    ],
+    "fitness_score": 0.735122,
+    "metrics": {
+      "win_rate": 0.5833333333333334,
+      "profit_factor": 5.218181818181828,
+      "max_drawdown": 0.03263833099999993,
+      "total_trades": 24,
+      "expectancy": 1.9333333333333365,
+      "stability_score": 0.9353762219069031,
+      "sharpe_ratio": 0.7541376426808304,
+      "avg_trade_r": 1.9333333333333365,
+      "avg_winner_r": 4.100000000000007,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000028,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.735122
+    }
+  },
+  {
+    "genome_id": "fcf39d38-2efc-4d6f-ad61-dd446d14c7b7",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 14,
+          "slow": 39,
+          "signal": 7
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "3409cbe4-438c-4ab1-a62b-bd8ba589c951"
+    ],
+    "fitness_score": 0.735122,
+    "metrics": {
+      "win_rate": 0.5833333333333334,
+      "profit_factor": 5.218181818181823,
+      "max_drawdown": 0.032638330999999944,
+      "total_trades": 24,
+      "expectancy": 1.9333333333333351,
+      "stability_score": 0.9353762219069028,
+      "sharpe_ratio": 0.7541376426808305,
+      "avg_trade_r": 1.9333333333333351,
+      "avg_winner_r": 4.100000000000003,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000028,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.735122
+    }
+  },
+  {
+    "genome_id": "b4a9d052-e560-4b6f-af44-e09f7419e6db",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "MACD",
+        "params": {
+          "fast": 10,
+          "slow": 22,
+          "signal": 10
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "long",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0196,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.005
+    },
+    "parent_ids": [
+      "a021c915-58b3-4eb1-943d-a7084b39ad22"
+    ],
+    "fitness_score": 0.735122,
+    "metrics": {
+      "win_rate": 0.5833333333333334,
+      "profit_factor": 5.218181818181826,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 24,
+      "expectancy": 1.933333333333336,
+      "stability_score": 0.935376221906903,
+      "sharpe_ratio": 0.7541376426808306,
+      "avg_trade_r": 1.933333333333336,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.735122
+    }
+  },
+  {
+    "genome_id": "2f6dd958-48a7-48af-a927-8c7eec7e0cbd",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "STOCHASTIC",
+        "params": {
+          "k_period": 10,
+          "d_period": 6
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "677ee3a5-1e3b-4cac-acab-12465c884248"
+    ],
+    "fitness_score": 0.735122,
+    "metrics": {
+      "win_rate": 0.5833333333333334,
+      "profit_factor": 5.218181818181828,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 24,
+      "expectancy": 1.933333333333337,
+      "stability_score": 0.9353762219069031,
+      "sharpe_ratio": 0.7541376426808307,
+      "avg_trade_r": 1.933333333333337,
+      "avg_winner_r": 4.100000000000007,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.735122
+    }
+  },
+  {
+    "genome_id": "ebf3e808-6968-4295-afec-68e86dcd228c",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 22
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0199,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0072
+    },
+    "parent_ids": [
+      "5d37a5b9-e5c5-481f-9716-208e35add6b8"
+    ],
+    "fitness_score": 0.720934,
+    "metrics": {
+      "win_rate": 0.5833333333333334,
+      "profit_factor": 5.218181818181825,
+      "max_drawdown": 0.04327930935899994,
+      "total_trades": 24,
+      "expectancy": 1.933333333333336,
+      "stability_score": 0.935376221906903,
+      "sharpe_ratio": 0.7541376426808306,
+      "avg_trade_r": 1.933333333333336,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 4,
+      "fitness_score": 0.720934
+    }
+  },
+  {
+    "genome_id": "3c41489d-099c-4e07-a203-9fed031c9504",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 22
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "4298b6e1-b30e-4cb5-9fd0-423d25ffe3da"
+    ],
+    "fitness_score": 0.720934,
+    "metrics": {
+      "win_rate": 0.5833333333333334,
+      "profit_factor": 5.218181818181825,
+      "max_drawdown": 0.04327930935899994,
+      "total_trades": 24,
+      "expectancy": 1.933333333333336,
+      "stability_score": 0.935376221906903,
+      "sharpe_ratio": 0.7541376426808306,
+      "avg_trade_r": 1.933333333333336,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 4,
+      "fitness_score": 0.720934
+    }
+  },
+  {
+    "genome_id": "80d744c5-6cea-4dc4-b9b2-b299c96ee964",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 18
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0199,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0062
+    },
+    "parent_ids": [
+      "743046f2-e8ee-46ff-a41e-39558ffd7618"
+    ],
+    "fitness_score": 0.720934,
+    "metrics": {
+      "win_rate": 0.5833333333333334,
+      "profit_factor": 5.218181818181825,
+      "max_drawdown": 0.04327930935899994,
+      "total_trades": 24,
+      "expectancy": 1.933333333333336,
+      "stability_score": 0.935376221906903,
+      "sharpe_ratio": 0.7541376426808306,
+      "avg_trade_r": 1.933333333333336,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 4,
+      "fitness_score": 0.720934
+    }
+  },
+  {
+    "genome_id": "365f7735-5d62-466f-b43d-c18e96e8e86d",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 18
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "e3f0bd0e-04bb-4706-be74-00990d70371d"
+    ],
+    "fitness_score": 0.720934,
+    "metrics": {
+      "win_rate": 0.5833333333333334,
+      "profit_factor": 5.218181818181825,
+      "max_drawdown": 0.04327930935899994,
+      "total_trades": 24,
+      "expectancy": 1.933333333333336,
+      "stability_score": 0.935376221906903,
+      "sharpe_ratio": 0.7541376426808306,
+      "avg_trade_r": 1.933333333333336,
+      "avg_winner_r": 4.100000000000004,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 4,
+      "fitness_score": 0.720934
+    }
+  },
+  {
+    "genome_id": "f6eb6329-0055-4850-bc5d-0930d3f5e72d",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 21
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.11,
+      "stop_loss_atr_mult": 1.95
+    },
+    "risk": {
+      "risk_per_trade": 0.0239,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.0068
+    },
+    "parent_ids": [
+      "677ee3a5-1e3b-4cac-acab-12465c884248"
+    ],
+    "fitness_score": 0.708936,
+    "metrics": {
+      "win_rate": 0.5652173913043478,
+      "profit_factor": 4.739090909090912,
+      "max_drawdown": 0.03263833100000007,
+      "total_trades": 23,
+      "expectancy": 1.7882608695652178,
+      "stability_score": 0.9999999999999996,
+      "sharpe_ratio": 0.7059373059510393,
+      "avg_trade_r": 1.7882608695652178,
+      "avg_winner_r": 4.010000000000002,
+      "avg_loser_r": -1.1,
+      "largest_winner_r": 4.010000000000032,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.708936
+    }
+  },
+  {
+    "genome_id": "a907eec9-1163-4237-ad5a-d64535c7a2fc",
+    "species": "tesla",
+    "generation": 23,
+    "indicators": [
+      {
+        "name": "ADX",
+        "params": {
+          "period": 18
+        },
+        "timeframe": "H4",
+        "role": "entry_trigger"
+      },
+      {
+        "name": "MOMENTUM",
+        "params": {
+          "period": 12
+        },
+        "timeframe": "H4",
+        "role": "entry_filter"
+      },
+      {
+        "name": "ATR",
+        "params": {
+          "period": 15
+        },
+        "timeframe": "H4",
+        "role": "exit_trigger"
+      }
+    ],
+    "entry_logic": {
+      "direction": "both",
+      "logic_type": "AND",
+      "conditions": [
+        {
+          "indicator_idx": 1,
+          "comparison": "slope_positive",
+          "reference_idx": null,
+          "threshold": null,
+          "n_bars": 1,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 0,
+          "comparison": "below_threshold",
+          "reference_idx": null,
+          "threshold": 32.55664085431705,
+          "n_bars": 3,
+          "sub_key": null
+        },
+        {
+          "indicator_idx": 2,
+          "comparison": "crossunder",
+          "reference_idx": 1,
+          "threshold": null,
+          "n_bars": 5,
+          "sub_key": null
+        }
+      ]
+    },
+    "exit_logic": {
+      "exit_type": "trailing_stop",
+      "take_profit_r": 4.2,
+      "stop_loss_atr_mult": 2.05
+    },
+    "risk": {
+      "risk_per_trade": 0.0191,
+      "max_concurrent_trades": 1,
+      "daily_loss_limit": 0.006
+    },
+    "parent_ids": [
+      "54321cbc-20f2-4ab4-8251-8b1efdac5647"
+    ],
+    "fitness_score": 0.697842,
+    "metrics": {
+      "win_rate": 0.56,
+      "profit_factor": 4.743801652892571,
+      "max_drawdown": 0.03263833099999994,
+      "total_trades": 25,
+      "expectancy": 1.8120000000000034,
+      "stability_score": 0.9331619537292246,
+      "sharpe_ratio": 0.701995774429803,
+      "avg_trade_r": 1.8120000000000034,
+      "avg_winner_r": 4.100000000000007,
+      "avg_loser_r": -1.0999999999999999,
+      "largest_winner_r": 4.100000000000027,
+      "largest_loser_r": -1.1,
+      "consecutive_losses_max": 3,
+      "fitness_score": 0.697842
+    }
+  }
+]

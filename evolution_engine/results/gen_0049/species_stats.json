@@ -1,0 +1,58 @@
+{
+  "tesla": {
+    "total": 240,
+    "survived": 0,
+    "survival_rate": 0.0,
+    "avg_fitness": 0.421112,
+    "best_fitness": 0.764091
+  },
+  "davinci": {
+    "total": 6,
+    "survived": 0,
+    "survival_rate": 0.0,
+    "avg_fitness": 0.139114,
+    "best_fitness": 0.419493
+  },
+  "newton": {
+    "total": 8,
+    "survived": 0,
+    "survival_rate": 0.0,
+    "avg_fitness": 0.265734,
+    "best_fitness": 0.641526
+  },
+  "aristotle": {
+    "total": 11,
+    "survived": 0,
+    "survival_rate": 0.0,
+    "avg_fitness": 0.099737,
+    "best_fitness": 0.478176
+  },
+  "hypatia": {
+    "total": 10,
+    "survived": 0,
+    "survival_rate": 0.0,
+    "avg_fitness": 0.107126,
+    "best_fitness": 0.5653
+  },
+  "archimedes": {
+    "total": 11,
+    "survived": 0,
+    "survival_rate": 0.0,
+    "avg_fitness": 0.01221,
+    "best_fitness": 0.073634
+  },
+  "hawking": {
+    "total": 7,
+    "survived": 0,
+    "survival_rate": 0.0,
+    "avg_fitness": 0.029841,
+    "best_fitness": 0.12441
+  },
+  "turing": {
+    "total": 7,
+    "survived": 0,
+    "survival_rate": 0.0,
+    "avg_fitness": 0.127489,
+    "best_fitness": 0.487693
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "turing": {
+    "total": 440,
+    "survived": 0,
+    "survival_rate": 0.0,
+    "avg_fitness": 0.496638,
+    "best_fitness": 0.765362
+  },
+  "newton": {
+    "total": 60,
+    "survived": 0,
+    "survival_rate": 0.0,
+    "avg_fitness": 0.171006,
+    "best_fitness": 0.746066
+  }
+}

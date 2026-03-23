@@ -1,0 +1,71 @@
+{
+  "generation": 26,
+  "total_genomes": 300,
+  "survivors": 81,
+  "survival_rate": 0.27,
+  "species_stats": {
+    "tesla": {
+      "total": 239,
+      "survived": 81,
+      "survival_rate": 0.339,
+      "avg_fitness": 0.380074,
+      "best_fitness": 0.764091
+    },
+    "davinci": {
+      "total": 8,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.065909,
+      "best_fitness": 0.270991
+    },
+    "newton": {
+      "total": 12,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.073499,
+      "best_fitness": 0.461965
+    },
+    "aristotle": {
+      "total": 6,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.0,
+      "best_fitness": 0.0
+    },
+    "hypatia": {
+      "total": 8,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.264117,
+      "best_fitness": 0.558485
+    },
+    "archimedes": {
+      "total": 10,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.008099,
+      "best_fitness": 0.080994
+    },
+    "hawking": {
+      "total": 6,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.118268,
+      "best_fitness": 0.626105
+    },
+    "turing": {
+      "total": 11,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.089197,
+      "best_fitness": 0.53253
+    }
+  },
+  "best_genome_id": "fd570061-8721-4f1e-9b9b-6baad111dcb3",
+  "best_species": "tesla",
+  "best_fitness": 0.764091,
+  "best_win_rate": 0.6086956521739131,
+  "best_profit_factor": 5.7979797979798064,
+  "best_max_drawdown": 0.03263833099999994,
+  "best_total_trades": 23
+}

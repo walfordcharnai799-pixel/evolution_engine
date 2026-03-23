@@ -1,0 +1,64 @@
+{
+  "generation": 37,
+  "total_genomes": 300,
+  "survivors": 0,
+  "survival_rate": 0.0,
+  "species_stats": {
+    "tesla": {
+      "total": 238,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.389188,
+      "best_fitness": 0.764091
+    },
+    "davinci": {
+      "total": 7,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.09984,
+      "best_fitness": 0.639247
+    },
+    "newton": {
+      "total": 7,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.282322,
+      "best_fitness": 0.556131
+    },
+    "aristotle": {
+      "total": 9,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.106484,
+      "best_fitness": 0.706849
+    },
+    "hypatia": {
+      "total": 9,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.218947,
+      "best_fitness": 0.545228
+    },
+    "archimedes": {
+      "total": 10,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.183536,
+      "best_fitness": 0.546521
+    },
+    "hawking": {
+      "total": 12,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.036968,
+      "best_fitness": 0.443621
+    },
+    "turing": {
+      "total": 8,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.063885,
+      "best_fitness": 0.511079
+    }
+  }
+}

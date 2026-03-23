@@ -1,0 +1,22 @@
+{
+  "generation": 10,
+  "total_genomes": 500,
+  "survivors": 0,
+  "survival_rate": 0.0,
+  "species_stats": {
+    "turing": {
+      "total": 435,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.5123,
+      "best_fitness": 0.765362
+    },
+    "newton": {
+      "total": 65,
+      "survived": 0,
+      "survival_rate": 0.0,
+      "avg_fitness": 0.138778,
+      "best_fitness": 0.765362
+    }
+  }
+}

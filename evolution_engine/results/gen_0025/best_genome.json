@@ -1,0 +1,91 @@
+{
+  "genome_id": "fd570061-8721-4f1e-9b9b-6baad111dcb3",
+  "species": "tesla",
+  "generation": 11,
+  "indicators": [
+    {
+      "name": "ADX",
+      "params": {
+        "period": 21
+      },
+      "timeframe": "H4",
+      "role": "entry_trigger"
+    },
+    {
+      "name": "MOMENTUM",
+      "params": {
+        "period": 12
+      },
+      "timeframe": "H4",
+      "role": "entry_filter"
+    },
+    {
+      "name": "ATR",
+      "params": {
+        "period": 15
+      },
+      "timeframe": "H4",
+      "role": "exit_trigger"
+    }
+  ],
+  "entry_logic": {
+    "direction": "both",
+    "logic_type": "AND",
+    "conditions": [
+      {
+        "indicator_idx": 1,
+        "comparison": "slope_positive",
+        "reference_idx": null,
+        "threshold": null,
+        "n_bars": 1,
+        "sub_key": null
+      },
+      {
+        "indicator_idx": 0,
+        "comparison": "below_threshold",
+        "reference_idx": null,
+        "threshold": 32.55664085431705,
+        "n_bars": 3,
+        "sub_key": null
+      },
+      {
+        "indicator_idx": 2,
+        "comparison": "crossunder",
+        "reference_idx": 1,
+        "threshold": null,
+        "n_bars": 5,
+        "sub_key": null
+      }
+    ]
+  },
+  "exit_logic": {
+    "exit_type": "trailing_stop",
+    "take_profit_r": 4.2,
+    "stop_loss_atr_mult": 2.05
+  },
+  "risk": {
+    "risk_per_trade": 0.0191,
+    "max_concurrent_trades": 1,
+    "daily_loss_limit": 0.006
+  },
+  "parent_ids": [
+    "083e8293-a19c-4f42-977c-24d01d211113"
+  ],
+  "fitness_score": 0.764091,
+  "metrics": {
+    "win_rate": 0.6086956521739131,
+    "profit_factor": 5.7979797979798064,
+    "max_drawdown": 0.03263833099999994,
+    "total_trades": 23,
+    "expectancy": 2.065217391304351,
+    "stability_score": 0.9999999999999998,
+    "sharpe_ratio": 0.813776217361549,
+    "avg_trade_r": 2.065217391304351,
+    "avg_winner_r": 4.100000000000004,
+    "avg_loser_r": -1.1,
+    "largest_winner_r": 4.100000000000027,
+    "largest_loser_r": -1.1,
+    "consecutive_losses_max": 3,
+    "fitness_score": 0.764091
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "genome_id": "3ffbb2b1-9e8b-4483-97b0-a9b7bdb5f470",
+  "species": "aristotle",
+  "generation": 0,
+  "indicators": [
+    {
+      "name": "ADX",
+      "params": {
+        "period": 28
+      },
+      "timeframe": "H4",
+      "role": "entry_trigger"
+    },
+    {
+      "name": "SMA",
+      "params": {
+        "period": 136
+      },
+      "timeframe": "H4",
+      "role": "entry_filter"
+    },
+    {
+      "name": "MACD",
+      "params": {
+        "fast": 10,
+        "slow": 45,
+        "signal": 12
+      },
+      "timeframe": "H1",
+      "role": "exit_trigger"
+    }
+  ],
+  "entry_logic": {
+    "direction": "both",
+    "logic_type": "AND",
+    "conditions": [
+      {
+        "indicator_idx": 1,
+        "comparison": "slope_positive",
+        "reference_idx": null,
+        "threshold": null,
+        "n_bars": 1,
+        "sub_key": null
+      },
+      {
+        "indicator_idx": 0,
+        "comparison": "below_threshold",
+        "reference_idx": null,
+        "threshold": 32.55664085431705,
+        "n_bars": 3,
+        "sub_key": null
+      },
+      {
+        "indicator_idx": 2,
+        "comparison": "crossunder",
+        "reference_idx": 0,
+        "threshold": null,
+        "n_bars": 1,
+        "sub_key": null
+      }
+    ]
+  },
+  "exit_logic": {
+    "exit_type": "trailing_stop",
+    "take_profit_r": 4.52,
+    "stop_loss_atr_mult": 2.07
+  },
+  "risk": {
+    "risk_per_trade": 0.026,
+    "max_concurrent_trades": 1,
+    "daily_loss_limit": 0.0129
+  },
+  "parent_ids": [],
+  "fitness_score": 0.531154,
+  "metrics": {
+    "win_rate": 0.4583333333333333,
+    "profit_factor": 3.4000000000000004,
+    "max_drawdown": 0.04327930935899993,
+    "total_trades": 24,
+    "expectancy": 1.43,
+    "stability_score": 0.9157348661364713,
+    "sharpe_ratio": 0.5199243801348433,
+    "avg_trade_r": 1.43,
+    "avg_winner_r": 4.420000000000001,
+    "avg_loser_r": -1.0999999999999999,
+    "largest_winner_r": 4.420000000000028,
+    "largest_loser_r": -1.1,
+    "consecutive_losses_max": 4,
+    "fitness_score": 0.531154
+  }
+}
