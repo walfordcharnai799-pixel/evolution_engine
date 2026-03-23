@@ -183,14 +183,13 @@ class EvolutionLoop:
             # --- Rank survivors ---
             ranked = self._selection_engine.rank_population(survivors)
 
-            # Fallback: if 0 survivors, use top 20% by raw fitness as provisional elites
-            # so evolution can climb toward the strict gates rather than random-restart each gen
-            if not ranked:
-                all_ranked = self._selection_engine.rank_population(population)
-                n_fallback = max(2, int(len(all_ranked) * 0.20))
-                ranked = all_ranked[:n_fallback]
+            # --- Ensure minimum elites always survive ---
+            min_elites = 10  # keep top 10 even if gates fail
+            all_ranked = self._selection_engine.rank_population(population)
+            if len(ranked) < min_elites:
+                ranked = all_ranked[:min_elites]
                 self._logger._console.warning(
-                    f"Gen {generation}: 0 survivors — using top {n_fallback} by fitness as provisional elites"
+                    f"Gen {generation}: fewer than {min_elites} survivors — keeping top {min_elites} as elites"
                 )
 
             # --- Update hall of fame ---
