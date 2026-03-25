@@ -45,12 +45,21 @@ PROGRESSIVE_GATES = [
 
 # --- Fitness composite weights (must sum to 1.0) ---
 FITNESS_WEIGHTS = {
-    "profit_factor": 0.30,
-    "win_rate":      0.20,
-    "drawdown":      0.20,
-    "expectancy":    0.15,
-    "stability":     0.15,
+    "profit_factor": 0.26,
+    "win_rate":      0.18,
+    "drawdown":      0.18,
+    "expectancy":    0.14,
+    "stability":     0.12,
+    "sharpe":        0.06,
+    "calmar":        0.06,
 }
+
+# Niching: minimum elites per species
+NICHING_PER_SPECIES = 3
+
+# Stagnation mutation boost
+STAGNATION_WINDOW = 5
+STAGNATION_MUTATION_BOOST = 1.5
 
 # --- Data ---
 SYMBOLS         = ["XAGUSD"]   # Focused symbol

@@ -26,6 +26,7 @@ class MetricsReport:
     expectancy: float
     stability_score: float
     sharpe_ratio: float
+    calmar_ratio: float
     avg_trade_r: float
     avg_winner_r: float
     avg_loser_r: float
@@ -69,6 +70,7 @@ class MetricsEngine:
         expectancy     = float(np.mean(adjusted_pnl))
         stability      = self._compute_stability(adjusted_pnl)
         sharpe         = self._compute_sharpe(adjusted_pnl)
+        calmar         = self._compute_calmar(equity_curve, result)
         consec_losses  = self._max_consecutive_losses(adjusted_pnl)
         recovery_fail  = self._check_recovery(equity_curve, SURVIVAL.get("recovery_bars", 5))
 
@@ -84,6 +86,7 @@ class MetricsEngine:
             expectancy=expectancy,
             stability_score=stability,
             sharpe_ratio=sharpe,
+            calmar_ratio=calmar,
             avg_trade_r=float(np.mean(adjusted_pnl)),
             avg_winner_r=float(np.mean(winners)) if winners else 0.0,
             avg_loser_r=float(np.mean(losers))  if losers  else 0.0,
@@ -205,6 +208,23 @@ class MetricsEngine:
         std = np.std(arr)
         return float(np.mean(arr) / std) if std > 0 else 0.0
 
+    def _compute_calmar(self, equity_curve: pd.Series, result: BacktestResult) -> float:
+        if len(equity_curve) < 2:
+            return 0.0
+        initial = float(equity_curve.iloc[0])
+        final = float(equity_curve.iloc[-1])
+        if initial <= 0:
+            return 0.0
+        bars = max(1, result.n_bars)
+        tf = result.primary_timeframe
+        bars_per_year = 17520 if tf == "M30" else 8760 if tf == "H1" else 2190 if tf == "H4" else 8760
+        years = max(1e-6, bars / bars_per_year)
+        cagr = (final / initial) ** (1 / years) - 1
+        max_dd = self._compute_drawdown(equity_curve)
+        if max_dd <= 0:
+            return 0.0
+        return float(cagr / max_dd)
+
     def _max_consecutive_losses(self, pnl_rs: list[float]) -> int:
         max_streak = streak = 0
         for r in pnl_rs:
@@ -229,13 +249,17 @@ class MetricsEngine:
         dd_norm   = min(1.0, max(0.0, 1.0 - r.max_drawdown / 0.15))
         exp_norm  = min(1.0, max(0.0, r.expectancy / 3.0))
         stab_norm = r.stability_score
+        sharpe_norm = min(1.0, max(0.0, (r.sharpe_ratio + 2.0) / 6.0))  # approx -2..4
+        calmar_norm = min(1.0, max(0.0, r.calmar_ratio / 3.0))
 
         score = (
             w["profit_factor"] * pf_norm  +
             w["win_rate"]      * wr_norm  +
             w["drawdown"]      * dd_norm  +
             w["expectancy"]    * exp_norm +
-            w["stability"]     * stab_norm
+            w["stability"]     * stab_norm +
+            w["sharpe"]        * sharpe_norm +
+            w["calmar"]        * calmar_norm
         )
 
         if r.total_trades < SURVIVAL["min_trades"]:
@@ -248,7 +272,7 @@ class MetricsEngine:
             genome_id=genome_id, species=species,
             win_rate=0.0, profit_factor=0.0, max_drawdown=1.0,
             total_trades=0, expectancy=0.0, stability_score=0.0,
-            sharpe_ratio=0.0, avg_trade_r=0.0, avg_winner_r=0.0,
+            sharpe_ratio=0.0, calmar_ratio=0.0, avg_trade_r=0.0, avg_winner_r=0.0,
             avg_loser_r=0.0, largest_winner_r=0.0, largest_loser_r=0.0,
             consecutive_losses_max=0, fitness_score=0.0,
             recovery_fail=False, slippage_applied_pips=0.0,

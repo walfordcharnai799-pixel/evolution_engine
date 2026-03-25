@@ -153,6 +153,8 @@ class EvolutionLoop:
         population = self._population_factory.generate_initial(pop_size, generation=0)
         hall_of_fame: list[tuple[StrategyGenome, MetricsReport]] = []
 
+        best_history: list[float] = []
+
         for generation in range(max_gen):
             self._logger.log_generation_start(generation, len(population))
 
@@ -183,6 +185,20 @@ class EvolutionLoop:
             # --- Rank survivors ---
             ranked = self._selection_engine.rank_population(survivors)
 
+            # --- Niching: keep top N per species (if any survivors) ---
+            niching_n = getattr(_s, "NICHING_PER_SPECIES", 0)
+            if niching_n and survivors:
+                by_species: dict[str, list[StrategyGenome]] = {}
+                for g in survivors:
+                    by_species.setdefault(g.species, []).append(g)
+                niche_pool: list[StrategyGenome] = []
+                for sp, lst in by_species.items():
+                    lst_sorted = self._selection_engine.rank_population(lst)
+                    niche_pool.extend(lst_sorted[:niching_n])
+                # Prepend niche_pool to ranked (unique)
+                seen = {g.genome_id for g in niche_pool}
+                ranked = niche_pool + [g for g in ranked if g.genome_id not in seen]
+
             # --- Ensure minimum elites always survive ---
             min_elites = 10  # keep top 10 even if gates fail
             all_ranked = self._selection_engine.rank_population(population)
@@ -197,6 +213,7 @@ class EvolutionLoop:
                 best = ranked[0]
                 best_report = reports[best.genome_id]
                 self._update_hall_of_fame(hall_of_fame, best, best_report)
+                best_history.append(best_report.fitness_score)
 
             # --- Export generation results ---
             self._exporter.export_generation(
@@ -219,6 +236,31 @@ class EvolutionLoop:
 
             # --- Evolve next generation ---
             elites = self._selection_engine.select_elites(ranked, elite_frac)
+
+            # Stagnation boost
+            boost = 1.0
+            window = getattr(_s, "STAGNATION_WINDOW", 0)
+            boost_factor = getattr(_s, "STAGNATION_MUTATION_BOOST", 1.0)
+            if window and len(best_history) >= window:
+                recent = best_history[-window:]
+                if max(recent) <= recent[0]:
+                    boost = boost_factor
+                    self._logger._console.warning(
+                        f"Gen {generation}: stagnation detected — mutation boost {boost}"
+                    )
+
+            # Temporarily wrap mutation engine with boost
+            original_mutate = self._mutation_engine.mutate
+
+            def boosted_mutate(genome, mutation_rate, mutation_strength, species_indicator_weights=None):
+                return original_mutate(
+                    genome,
+                    mutation_rate * boost,
+                    mutation_strength * boost,
+                    species_indicator_weights,
+                )
+
+            self._mutation_engine.mutate = boosted_mutate  # type: ignore
             population = self._population_factory.replenish(
                 elites,
                 pop_size,
@@ -226,6 +268,7 @@ class EvolutionLoop:
                 self._mutation_engine,
                 self._selection_engine,
             )
+            self._mutation_engine.mutate = original_mutate  # restore
 
             # Clear indicator cache between generations (data unchanged, genomes change)
             self._indicator_cache.clear()
