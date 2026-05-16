@@ -50,6 +50,14 @@ Examples:
     parser.add_argument("--mt5-path", type=str, default=None, help="Path to MT5 terminal64.exe")
     parser.add_argument("--clear-cache", action="store_true", help="Clear cached data before starting")
     parser.add_argument("--use-cached", action="store_true", help="Use only cached data, no MT5 connection")
+    parser.add_argument(
+        "--create-video",
+        action="store_true",
+        help="After evolution completes, render an animated video of results",
+    )
+    parser.add_argument("--video-fps", type=int, default=8, help="Video frames per second (default: 8)")
+    parser.add_argument("--video-dpi", type=int, default=120, help="Video render DPI (default: 120)")
+    parser.add_argument("--video-format", choices=["mp4", "gif"], default="mp4", help="Video format (default: mp4)")
 
     return parser.parse_args()
 
@@ -95,6 +103,15 @@ def main() -> None:
         print("\nInterrupted by user. Saving state and exiting...")
     finally:
         loop.teardown()
+
+    if args.create_video:
+        from evolution_engine.orchestrator.video_creator import VideoCreator
+        results_dir = config.get("DATA_CACHE_DIR", "evolution_engine/data/cache").replace(
+            "data/cache", "results"
+        )
+        output_path = f"{results_dir}/evolution.{args.video_format}"
+        creator = VideoCreator(results_dir=results_dir, output_path=output_path)
+        creator.create(fps=args.video_fps, dpi=args.video_dpi)
 
 
 if __name__ == "__main__":
